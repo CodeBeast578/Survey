@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <main id="main">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+      <h1 id="title" class="align">Roy Survey Form</h1>
+      <p id="description" class="align">Please Fill in The Following Survey Form</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age(Optional)</label>
+        <input id="number" type="number" min=10 max=99 placeholder="Age" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Best Contents</label>
+        <select class="form-con" id="dropdown">
+          <option disabled selected value>Select Our Best Content</option>
+          <option value="videos">Videos</option>
+          <option value="songs">Songs</option>
+          <option value="lessons">Lessons</option>
+          <option value="free projects">Free Projects</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="radio">How Much Rating Would U Give?</label>
+        <label><input name="radiobox" id="radio" type="radio" class="input-radio" value="5" checked>5 Star</label>
+        <label><input name="radiobox" id="radio" type="radio" class="input-radio" value="4">4 Star</label>
+        <label><input id="radio" type="radio" class="input-radio" name="radiobox" value="3">3 Star</label>
+        <label><input id="radio" type="radio" class="input-radio" name="radiobox" value="2">2 Star</label>
+        <label><input id="radio" type="radio" class="input-radio" name="radiobox" value="0">1 Star</label>
+      </div>
+      <div class="form-group">
+        <label>What Should We Improve In Our Interface</label>
+        <label><input type="checkbox" value="User Profile" class="input-checkbox" name="chk">User Profile</label>
+        <label><input type="checkbox" value="Graphics" class="input-checkbox" name="chk">Graphics</label>
+        <label><input type="checkbox" value="Response Time" class="input-checkbox" name="chk">Response Time</label>
+        <label><input type="checkbox" value="Feedback Page" class="input-checkbox" name="chk">Feedback Page</label>
+      </div>
+      <div class="form-group">
+        <label>Space For Additional Comments</label>
+        <textarea id="comments" class="textcom" placeholder="Enter Your Comments Here"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" type="submit" class="btn" id="subbtn"><strong>Submit Form</strong></button>
+      </div>
+    </form>
+  </main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
